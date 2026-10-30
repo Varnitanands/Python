@@ -169,6 +169,21 @@
 
 # password checker with remaining attempts
 
+current_attempts=0
+max_attempts=3
+auth_key= 'ABCD'
+while current_attempts<max_attempts:
+     key = input('What\'s the passcode?')
+     if key==auth_key:
+          print('ACCESS GRANTED');
+          break
+     else:
+          current_attempts+=1
+          print(f"REMAINING ATTEMPTS ARE :{max_attempts-current_attempts} ")
+
+else:
+     print('SYSTEM LOCKED!!')
+     
 
 
 
